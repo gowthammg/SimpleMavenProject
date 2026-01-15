@@ -23,7 +23,7 @@ pipeline {
             build wait: false, job: 'Test Pipeline', waitForStart: true
         }
         always{
-            dir('C:\\Users\\MG08\\eclipse-workspace\\simplemaven\\target\\surefire-reports'){
+            dir('C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\FreeStyleProject\\target\\surefire-reports'){
                 testNG failedFails: 80, failedSkips: 0, unstableFails: 20, unstableSkips: 50
             }
         }
