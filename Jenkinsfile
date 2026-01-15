@@ -5,7 +5,6 @@ pipeline {
             steps{
                 dir('C:\\Sprint\\Jenkins\\') {
                     bat 'Package.bat'
-                    echo pwd()
                 }
             }
         }
