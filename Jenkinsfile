@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('Current Directory'){
             steps{
-                //dir('C:\\Sprint\\Jenkins\\') {
+                dir('C:\\Sprint\\Jenkins\\') {
                     bat 'Package.bat'
                     echo pwd()
-                //}
+                }
             }
         }
         stage('Archive the Jars'){
